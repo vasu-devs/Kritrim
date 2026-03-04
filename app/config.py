@@ -1,8 +1,6 @@
 from pydantic_settings import BaseSettings
 class Settings(BaseSettings):
-    whatsapp_verify_token: str
-    whatsapp_api_token: str
-    whatsapp_phone_number_id: str
+    telegram_bot_token: str
 
     class Config:
         env_file=".env"
